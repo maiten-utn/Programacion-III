@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctico 1 HTML</title>
+  <style>html{scroll-behavior: smooth;}</style>
+</head>
+<body>
+  <main style="padding: 0 20%; ">
+    <section id="estructura" style="display: flex; flex-direction: column;align-items: center;">
+      <h2>1. Estructura Básica del Documento HTML</h2>
+      <p>Este documento HTML tiene una estructtura basica que incluye la delcaracion de DOCTYPE, eiquetas de metadatos y un título</p>
+    </section>
+    <section style="display: flex; flex-direction: column;align-items: center;">
+      <h2>2. Encabezados y Propiedades de Texto</h2>
+      <h3 style="font-weight: bold;">Este es un texto en negrita</h3>
+      <h3 style="font-style: italic;">Este es un texto en cursiva</h3>
+      <h3 style="text-decoration: underline;">Este es un texto subrayado</h3> 
+    </section>
+    <section style="display: flex; flex-direction: column;align-items: center;">
+      <h2>3. División y agrupacion de contenido</h2>
+      <div>
+        <h2>Sección 1</h2>
+        <p>Contenido de la primera seccion agrupada en un div.</p>
+      </div>
+      <div>
+        <h2>Seccion 2</h2>
+        <p>Contenido de la segunda seccion agrupada en un div.</p>
+      </div>
+    </section>
+    <section style="display: flex; flex-direction: column;align-items: center;">
+      <h2>4. Enlaces y Listas</h2>
+      <p>Visita nuestro <a href="https://maiten-dev.vercel.app" target="_blank">sitio web</a> para más información</p>
+      <h3>Enlaces Internos</h3>
+      <ul>
+        <li><a href="#estrucura">Ir a Estructura</a></li>
+        <li><a href="#multimedia">Ir a Multimedia</a></li>
+        <li><a href="#formulario">Ir a Formulario</a></li>
+      </ul>
+      <h3>Lista desordenada</h3>
+      <ul>
+        <li>Primer ítem de la lista desordenada</li>
+        <li>Segundo ítem de la lista desordenada</li>
+      </ul>
+      <h3>Lista Ordenada</h3>
+      <ol>
+        <li>Primer ítem de la lista ordenada</li>
+        <li>Segundo ítem de la lista ordenada</li>
+      </ol>
+    </section style="display: flex; flex-direction: column;align-items: center;">
+    <section id="multimedia" style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+      <h2>5. Elementos Multimedia</h2>
+      <img style="width: 200px; height:140spx;" src="https://imgs.search.brave.com/pjYiYpRPuJOTJ38qpK0mywUS0qExb7JsCgjTi98JiFY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZW5lcy4yMG1pbnV0/b3MuZXMvZmlsZXMv/aW1hZ2VfNjQwX2F1/dG8vdXBsb2Fkcy9p/bWFnZW5lcy8yMDIz/LzAzLzIyL21hdGUu/anBlZw" alt="Imágen de mate">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/j5Ya11gVN3o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <audio controls>
+        <source src="assets/musica.mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+      </audio>
+    </section>
+    <section style="display: flex; flex-direction: column;align-items: center;">
+      <h2>6. Tablas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Valor 1</td>
+            <td>Valor 2</td>
+            <td>Valor 3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="formulario" style="display: flex; flex-direction: column;align-items: center;">
+      <h2>7. Formularios</h2>
+      <form>
+        Nombre: <input type="text" name="nombre"><br><br>
+        Edad: <input type="number" name="edad"><br><br>
+        Correo: <input type="email" name="correo"><br><br>
+        Mensaje: <textarea name="mensaje"></textarea><br><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+    <section style="display: flex; flex-direction: column;align-items: center;">
+      <h2>8. Semántica en HTML</h2>
+      <nav>
+        <ul>
+          <li><a href="#estructura">Estructura</a></li>
+          <li><a href="#multimedia">Multimedia</a></li>
+          <li><a href="#formulario">Formulario</a></li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+</body>
+</html>
